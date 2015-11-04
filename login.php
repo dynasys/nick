@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+
 <html lang='en'> 
 <head> 
     <link rel="stylesheet" href="StyleSheet.css">
@@ -9,12 +9,15 @@
         <img src="FSUseal.png" width="81" height="81">
         <b>FLORIDA STATE UNIVERSITY</b>
     </header>
-    <div id="container">       
+    <div id="container">
         <form method="post" class="log">
             <input type="text" id="username" name="username" placeholder="username">
             <input type="password" id="password" name="password" placeholder="password">
-            <input type="submit" value="login"><br>
-            <input type="checkbox"><label for="checkbox"><small>Keep me logged in</small>   </label>
+            <input type="submit" value="login" name="login"><br>
+            <?php
+            include 'log.php';
+            ?>
+<!DOCTYPE HTML>
         </form>
     </div>
     <div id="Block"> 

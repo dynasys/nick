@@ -8,7 +8,7 @@
     <header>
         <img src="newSeal.png" width="300" height="100">
     </header>
-    <div id="comp_reg" class="comp_reg">
+     <div id="comp_reg" class="comp_reg">
         <a href="studentRegister.html">students</a>
     </div>
     <form method="post" action="" id="reg_box" class="register"> 

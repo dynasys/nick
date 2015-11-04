@@ -1,0 +1,189 @@
+
+/* Basic page stuff so far */
+html {
+    background-color: #F2F2F2;
+}
+
+body {
+    /*width: 70%;*/
+    margin: 0 auto;
+}
+
+#cover {
+    margin-left: 18.7%;
+    margin-right: 18.7%;
+    padding-top: 1%;
+    
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 1px;
+    
+    background-color: #FFFFFF;
+}
+
+/* header stuff */
+
+header {
+    background-color: #782F40;
+    padding-left: 17%;
+    height: 85px;
+    text-align: left;
+    color: #CEB888;
+}
+
+/*
+img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+*/
+
+/* nagivation styling */
+
+nav {
+    background-color: #782F40;
+    padding-left: 17%;
+    height: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 7px;
+    font-family: "Trebuchet MS";
+    overflow: hidden;
+}
+
+.main {
+    float: left;
+    font-size: 20px;
+}
+
+.main:link, .main:visited {
+    display: block;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.main:hover, .main:active {
+    background-color: #FFFFFF;
+    color: #782F40;
+}
+
+
+/* main body stylinbg */
+
+#infobar {
+    padding: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: block;
+    border-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+
+.logout, .logout:visited {
+    color: #782F40;
+    background-color: #FFFFFF;
+    float: right;
+    display: block;
+    text-decoration: none;
+    text-algin: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#infobar .logout:hover {
+    background-color: #782F40;
+    color: #FFFFFF;
+}
+
+#profileInfo {
+    float: inherit;
+    margin-top: 2%;
+    margin-right: 75%;
+    padding: 10px;
+    padding-left: 2%
+}
+
+/* links */
+
+#otherlist {
+    background-color: ;
+    padding-left: 2%;
+    float: inherit;
+}
+
+li .navaway {
+    color: black;
+}
+
+/* feed */
+
+#feed {
+    margin-top: 4%;
+    margin-right: 8%;
+    padding-bottom: 500px; /* temp */
+    float: right;
+    width: 65%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* footer sytling */
+
+footer {
+    background-color: #B6B6B5;
+    padding-left: 19%;
+    height: 123px;
+    
+}
+
+
+/* ---------------------------general page styling done ------------------- */
+
+/* specific page styling, profile page */
+#name {
+    margin-top: 3%;
+    text-align: center;
+}
+
+#about {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#skills {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#certs {
+        margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#resume {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-bottom: 100px;
+}
+
+
