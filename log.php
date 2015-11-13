@@ -16,7 +16,7 @@ if(isset($_POST['login'])){
     //select db
     $db = mysql_select_db("csconnect", $connection);
     //checking if username and pw exist in db
-    $query = mysql_query("SELECT * FROM login WHERE password='$password' AND username='$username'", $connection);
+    $query = mysql_query("SELECT * FROM authentication WHERE password='$password' AND username='$username'", $connection);
     $rows = mysql_num_rows($query);
     
     if ($rows==1){
