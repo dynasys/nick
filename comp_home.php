@@ -19,9 +19,6 @@
     <nav>
         <ul>
             <li><a href="" title="Home" class="main">Home</a></li>
-            <li><a href="" title="Profile" class="main">Profile</a></li>
-            <li><a href="" title="Jobs" class="main">Jobs</a></li>
-            <li><a href="" title="Alerts" class="main">Alerts</a></li>
             <li><a href="" title="Settings" class="main">Settings</a></li>
         </ul>
     </nav>
@@ -34,13 +31,7 @@
     </div>
         
     <div id="feed">
-            <p>
-        Oh, you think the darkness is your ally, but you merely adopted the dark. I was born in it, moulded by it. I didn’t see the light until I was already a man; by then, it was nothing to me but blinding! The shadows betray you, because they belong to me. I will show you where I have made my home, I will be preparing to bring justice. Then, I will break you. Your precious armoury, gratefully accepted. We will need it. Ah yes, I was wondering what would break first. Your spirit, or your body.
-
-                <br> <br>
-
-                Everybody loves subbable.
-            </p>
+            
     </div>
     
     <div id="profileInfo">

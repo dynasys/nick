@@ -7,7 +7,7 @@ if(isset($_POST['login'])){
     $username=$_POST['username'];
     $password=$_POST['password'];
 
-    $connection = mysql_connect("localhost", "nick", "ayla1234");
+    $connection = mysql_connect("localhost", "root", "");
     //Security functions
     $username = stripslashes($username);
     $password = stripslashes($password);
@@ -17,10 +17,24 @@ if(isset($_POST['login'])){
     $db = mysql_select_db("csconnect", $connection);
     //checking if username and pw exist in db
     $query = mysql_query("SELECT * FROM authentication WHERE password='$password' AND username='$username'", $connection);
-    $rows = mysql_num_rows($query);
+    $role_quer = mysql_query("SELECT role FROM authentication WHERE password='$password' AND username='$username'", $connection);
+    $role_row = mysql_fetch_row($role_quer);
+    $role = $role_row[0];
+    $rows = mysql_num_rows($query); 
     
     if ($rows==1){
-        header("location: home.php");
+        $_SESSION['username'] = $username;
+        $_SESSION['password'] = $password;
+        $_SESSION['role'] = $role;
+        if($role == 's')
+            header("location: stu_home.php");
+        if($role == 'c'){
+            $cid_quer = mysql_query("SELECT Company_ID FROM company WHERE username='$username'");
+            $cid_row = mysql_fetch_row($cid_quer);
+            $companyID = $cid_row[0];
+            $_SESSION['companyID'] = $companyID;
+            header("location: comp_home.php");
+        }
     }
     else {
         echo $error;

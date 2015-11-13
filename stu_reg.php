@@ -4,7 +4,12 @@
 //NOTES:This script grabs the data from the student registration form.
 //If all the fields are filled out and the passwords match, it will insert
 //information into the student table and login information the authentication
-//table. Last edited on: 11-5-2015
+//table.
+//***************************************************************************
+//Last edited on: 11-12-2015    By:Nicolas Feraud
+//Removed testing lines and added code that prevents someone
+//from submitting into the database if a record already exists.
+
 session_start();
 
 if(isset($_POST['submit'])){
