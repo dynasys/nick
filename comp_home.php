@@ -10,6 +10,32 @@
     <meta charset="utf-8">
     <title>CS Connect</title>
     <link rel="stylesheet" href="newStyles.css">
+    <style>
+        table {
+            width:100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+        table#t01 tr:nth-child(odd) {
+            background-color:#fff;
+        }
+        table#t01 th	{
+            background-color: #782f40;
+            color: white;
+        }
+        .cjobut{
+            text-align: right;
+        }
+    </style>    
 </head>
 <body>
     <header>
@@ -31,7 +57,26 @@
     </div>
         
     <div id="feed">
+          
+        <table id="t01">
+            <caption><h2>Job Postings</h2></caption>
+            <tr>
+                <th>Job ID</th>
+                <th>Title</th>
+                <th>Position</th>		
+                <th>Type</th>
+                <th>City</th>
+                <th>Posted</th>
+                <th>Option</th> 
+            </tr>
             
+            <?php include "comp_home_scr.php" ?>
+            
+        </table>
+        <form method="Link" action="login.php" class="cjobut">
+            <input type="submit" value="Create new job">
+        </form>
+          
     </div>
     
     <div id="profileInfo">
