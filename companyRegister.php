@@ -25,7 +25,7 @@
             <input type="email" name="email" placeholder="E-mail" id="email"><br>
             <input type="Submit" value="Submit" name="Submit">
             <?php
-                include 'comp_reg.php';
+                include 'companyRegister_scr.php';
             ?>
             <div id="note">
                 <b><u>Note:</u></b> Clicking submit will send your request to the system administrator who will then veryfy that you

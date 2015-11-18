@@ -29,18 +29,13 @@
     <div id="cover">
     
     <div id="infobar">
-        Welcome, Paul - Nieto
+     
+        
         <a href="logout.php" title="Logout" class="logout">Logout</a>
     </div>
         
     <div id="feed">
-            <p>
-        Oh, you think the darkness is your ally, but you merely adopted the dark. I was born in it, moulded by it. I didn’t see the light until I was already a man; by then, it was nothing to me but blinding! The shadows betray you, because they belong to me. I will show you where I have made my home, I will be preparing to bring justice. Then, I will break you. Your precious armoury, gratefully accepted. We will need it. Ah yes, I was wondering what would break first. Your spirit, or your body.
-
-                <br> <br>
-
-                Everybody loves subbable.
-            </p>
+        <?php include "job_dump.php"; ?>
     </div>
     
     <div id="profileInfo">

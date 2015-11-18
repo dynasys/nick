@@ -17,7 +17,6 @@
             <?php
             include 'log.php';
             ?>
-<!DOCTYPE HTML>
         </form>
     </div>
     <div id="Block"> 

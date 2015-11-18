@@ -9,20 +9,19 @@
     //select db
     $db = mysql_select_db("csconnect", $connection);
     
-    $compUser = $_SESSION['username'];
+    $compUser = $_SESSION['username']; 
+    $companyID = $_SESSION['companyID'];
     
     //get company_ID
-    $compID = mysql_query("SELECT Company_ID 
-                           FROM company 
-                           WHERE username='$compUser'", $connection);
+    $compName = mysql_query("SELECT name FROM company WHERE username='$compUser'", $connection);
     
     // specify the row in tmp and then grab the number
-    $tmp = mysql_fetch_row($compID);
-    $compID = $tmp[0];
-    $_SESSION['compid'] = $compID;
+    $tmp = mysql_fetch_row($compName);
+    $compName = $tmp[0];
+    $_SESSION['compname'] = $compName;
     $query = mysql_query("SELECT Job_ID,Title, Position_Title, Type, City, Post_Date 
                           FROM jobs
-                        WHERE Company_ID='$compID'", $connection);
+                        WHERE Company_ID='$companyID'", $connection);
 
     while ($row = mysql_fetch_array($query, MYSQL_ASSOC)) {
         $JID = $row["Job_ID"];

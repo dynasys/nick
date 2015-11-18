@@ -22,7 +22,7 @@
             <input type="email" name="email" placeholder="E-mail" id="email"><br>
             <input type="Submit" value="Submit" name="submit">
             <?php
-                include 'stu_reg.php';
+                include 'StudentRegister_scr.php';
             ?>
         </fieldset>
     </form>    

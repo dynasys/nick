@@ -1,10 +1,10 @@
-<?php
- session_start();
-    if(!isset($_SESSION['username'])){
+<?php 
+session_start();
+if(!isset($_SESSION['username'])){
     header("Location:Login.php");
-    }
+}
+
 ?>
-<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="newStyles.css">
     <style>
         table {
-            width:100%;
+            width:25%%;
         }
         table, th, td {
             border: 1px solid black;
@@ -32,7 +32,16 @@
             background-color: #782f40;
             color: white;
         }
-        .cjobut{
+        .headcol {
+            width:5em;
+            top:auto;
+        }
+        .tailcol {
+            width = 20px;
+            min-width:10%;
+            max-width:10%;
+        }
+        .subut{
             text-align: right;
         }
     </style>    
@@ -44,7 +53,7 @@
     
     <nav>
         <ul>
-            <li><a href="" title="Home" class="main">Home</a></li>
+            <li><a href="comp_home.php" title="Home" class="main">Home</a></li>
             <li><a href="" title="Settings" class="main">Settings</a></li>
         </ul>
     </nav>
@@ -52,47 +61,23 @@
     <div id="cover">
     
     <div id="infobar">
-        Welcome, Paul - Nieto
         <a href="logout.php" title="Logout" class="logout">Logout</a>
     </div>
         
     <div id="feed">
           
         <table id="t01">
-            <caption><h2>Job Postings</h2></caption>
-            <tr>
-                <th>Job ID</th>
-                <th>Title</th>
-                <th>Position</th>		
-                <th>Type</th>
-                <th>City</th>
-                <th>Posted</th>
-                <th>Option</th> 
-            </tr>
+            <caption><h2>Create new job</h2></caption>
             
-            <?php include "comp_home_scr.php" ?>
+            <?php 
+                print_r($_SESSION);
+                include "create_job_scr.php" ?>
             
-        </table>
-        <form method="Link" action="create_job.php" class="cjobut">
-            <input type="submit" value="Create new job">
-        </form>
+            
+            
+
           
     </div>
-    
-    <div id="profileInfo">
-        Paul - Nieto
-        <br>
-        Junior, Graduating Apr 2017 <br>
-        Computer Science
-        <br>
-        pn13b@my.fsu.edu <br>
-        resume last updated: tuba <br>
-        <br>
-        profile completion <br>
-        enter bar here
-    </div>
-        
-
     
     <div id="links">
         <ul id="otherlist">
