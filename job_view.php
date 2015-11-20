@@ -1,14 +1,8 @@
 <?php
- session_start();
-    if(!isset($_SESSION['username'])){
-        header("Location:Login.php");
-    }
-   $connection = mysql_connect("localhost", "root", ""); 
-   $db = mysql_select_db("csconnect", $connection);
-   $username = $_SESSION['username'];
-   $fname_quer = mysql_query("SELECT First_Name FROM students WHERE username='$username'",$connection);
-   $fname_row = mysql_fetch_row($fname_quer);
-   $fname = $fname_row[0];
+ //session_start();
+//    if(!isset($_SESSION['username'])){
+ //   header("Location:Login.php");
+//    }
 ?>
 <!doctype html>
 <html lang="en">
@@ -16,6 +10,41 @@
     <meta charset="utf-8">
     <title>CS Connect</title>
     <link rel="stylesheet" href="newStyles.css">
+    <style>
+        table {
+            width:100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+        table#t01 tr:nth-child(odd) {
+            background-color:#fff;
+        }
+        table#t01 th	{
+            background-color: #782f40;
+            color: white;
+        }
+        .headcol {
+            width:5em;
+            top:auto;
+        }
+        .tailcol {
+            width = 20px;
+            min-width:10%;
+            max-width:10%;
+        }
+        .subut{
+            text-align: right;
+        }
+    </style>    
 </head>
 <body>
     <header>
@@ -25,7 +54,6 @@
     <nav>
         <ul>
             <li><a href="stu_home.php" title="Home" class="main">Home</a></li>
-            <li><a href="search.php" title="Search" class="main">Search</a></li>
             <li><a href="" title="Settings" class="main">Settings</a></li>
         </ul>
     </nav>
@@ -33,20 +61,21 @@
     <div id="cover">
     
     <div id="infobar">
-     
-        <?php
-            echo 'Welcome.';  
-        ?>
         <a href="logout.php" title="Logout" class="logout">Logout</a>
     </div>
         
     <div id="feed">
-        <h2>Available Jobs</h2>
-        <?php include "job_dump.php"; ?>
-    </div>
-    
-        
+          
+        <table id="t01">
+            <caption><h2>Job Posting</h2></caption>
+            
+            <?php include "job_view_scr.php" ?>
+            
+            
+            
 
+          
+    </div>
     
     <div id="links">
         <ul id="otherlist">

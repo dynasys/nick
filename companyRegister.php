@@ -6,7 +6,7 @@
 </head>
 <body>
     <header>
-        <img src="newSeal.png" width="300" height="100">
+        <img src="newSeal.png" width="189" height="81">
     </header>
      <div id="comp_reg" class="comp_reg">
         <a href="studentRegister.php">students</a>

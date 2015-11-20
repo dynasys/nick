@@ -1,5 +1,5 @@
 body{
-    background-color: #F2F2F2;
+    background-color: #FFF;
     margin: 0 auto;
 }
 header{
@@ -114,14 +114,18 @@ footer{
 #reg_box{
     position:absolute;
     z-index: -1;
+    width:85%;
     margin-top:50px;
-    margin-left:33%;
+    margin-left:28%;
 }
+
+/* fieldset width is 400px */
+
 fieldset{
-    width: 400px;
+    width: 38.7%;
     borer: 1px solid #2c2a29;
     padding: 20px;
-    text-align: right;
+    text-align: center;
     border-radius: 10px;
     background-color:#e6dbc3;
 }
@@ -130,15 +134,18 @@ fieldset{
     text-align: left;
     margin-top:5px;
 }
+
+/* comp_reg margin-left is 52.5% */
+
 #comp_reg{  
     z-index: 1;
     margin-top:50px;
-    margin-left:52.5%;
+    margin-left: 48%;
     position: absolute;
     color:#e6dbc3;
     font-weight: bold;
     font-family: sans-serif;
-    width:150px;
+    width: 150px;
     border: 1px solid #2C2A29;
     border-radius: 10px;
     padding: 10px 10px;
@@ -184,6 +191,7 @@ p{
     margin-right:2.5%;
 }
 img{
+    padding-left: 6%;
     position: relative;
     top: 50%;
     transform: translateY(-50%);

@@ -6,8 +6,7 @@
 </head>
 <body>
     <header>
-        <img src="FSUseal.png" width="81" height="81">
-        <b>FLORIDA STATE UNIVERSITY</b>
+        <img src="newSeal.png" width="189" height="81">
     </header>
     <div id="container">
         <form method="post" class="log">

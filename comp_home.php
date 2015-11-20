@@ -52,7 +52,7 @@
     <div id="cover">
     
     <div id="infobar">
-        Welcome, Paul - Nieto
+        Welcome
         <a href="logout.php" title="Logout" class="logout">Logout</a>
     </div>
         
@@ -73,6 +73,7 @@
             <?php include "comp_home_scr.php" ?>
             
         </table>
+        <br>
         <form method="Link" action="create_job.php" class="cjobut">
             <input type="submit" value="Create new job">
         </form>
@@ -80,16 +81,7 @@
     </div>
     
     <div id="profileInfo">
-        Paul - Nieto
-        <br>
-        Junior, Graduating Apr 2017 <br>
-        Computer Science
-        <br>
-        pn13b@my.fsu.edu <br>
-        resume last updated: tuba <br>
-        <br>
-        profile completion <br>
-        enter bar here
+
     </div>
         
 

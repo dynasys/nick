@@ -1,0 +1,8 @@
+<?php
+    if(isset($_POST['edit'])){
+    $JID = $_POST['JID'];
+    header("location: job_edit.php?JID=".urlencode("$JID"));
+    
+}
+
+?>

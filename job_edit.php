@@ -12,7 +12,7 @@ if(!isset($_SESSION['username'])){
     <link rel="stylesheet" href="newStyles.css">
     <style>
         table {
-            width:25%%;
+            width:25%;
         }
         table, th, td {
             border: 1px solid black;
@@ -53,14 +53,15 @@ if(!isset($_SESSION['username'])){
     
     <nav>
         <ul>
-            <li><a href="" title="Home" class="main">Home</a></li>
+            <li><a href="comp_home.php" title="Home" class="main">Home</a></li>
             <li><a href="" title="Settings" class="main">Settings</a></li>
         </ul>
     </nav>
 
     <div id="cover">
     
-    <div id="infobar">
+    <div id="infobar"> 
+        &nbsp;
         <a href="logout.php" title="Logout" class="logout">Logout</a>
     </div>
         
@@ -79,8 +80,8 @@ if(!isset($_SESSION['username'])){
     
     <div id="links">
         <ul id="otherlist">
-            <li><a href="" title="CS Homepage" class="navaway">CS Homepage</a></li>
-            <li><a href="" title="Systems Group" class="navaway">Systems Group</a></li>
+            <li><a href="http://cs.fsu.edu" title="CS Homepage" class="navaway">CS Homepage</a></li>
+            <li><a href="http://system.cs.fsu.edu" title="Systems Group" class="navaway">Systems Group</a></li>
             
         </ul>
     </div>

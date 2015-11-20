@@ -39,19 +39,15 @@ if(isset($_POST['login'])){
         $_SESSION['role'] = $role;
         if($role == 's'){
             //get first name for session
-            $fname_quer = ("SELECT First_Name FROM students WHERE username='$username'");
-            $fname_row = mysql_fetch_row($fname_quer);
-            $fname = $fname_row[0];
-            $_SESSION['fname'] = $fname;
             
             //get last name for session
-            $lname_quer = ("SELECT Last_Name FROM students WHERE username='$username'");
+            $lname_quer = mysql_query("SELECT Last_Name FROM students WHERE username='$username'",$connection);
             $lname_row = mysql_fetch_row($lname_quer);
             $lname = $lname_row[0];
             $_SESSION['lname'] = $lname;
             
             //get email for session
-            $email_quer = ("SELECT Email FROM students WHERE username='$username' ");
+            $email_quer = mysql_query("SELECT Email FROM students WHERE username='$username'",$connection);
             $email_row = mysql_fetch_row($email_quer);
             $email= $email_row[0];
             $_SESSION['email'] = $email;

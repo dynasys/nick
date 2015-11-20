@@ -12,7 +12,7 @@ if(!isset($_SESSION['username'])){
     <link rel="stylesheet" href="newStyles.css">
     <style>
         table {
-            width:25%%;
+            width:25%;
         }
         table, th, td {
             border: 1px solid black;
@@ -61,6 +61,7 @@ if(!isset($_SESSION['username'])){
     <div id="cover">
     
     <div id="infobar">
+        &nbsp;
         <a href="logout.php" title="Logout" class="logout">Logout</a>
     </div>
         
@@ -70,7 +71,6 @@ if(!isset($_SESSION['username'])){
             <caption><h2>Create new job</h2></caption>
             
             <?php 
-                print_r($_SESSION);
                 include "create_job_scr.php" ?>
             
             

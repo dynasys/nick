@@ -13,11 +13,10 @@ body {
     margin-left: 18.7%;
     margin-right: 18.7%;
     padding-top: 1%;
-    
     border-left-style: solid;
     border-right-style: solid;
     border-width: 1px;
-    
+    border-bottom-style: solid;
     background-color: #FFFFFF;
 }
 
@@ -131,6 +130,7 @@ li .navaway {
     margin-top: 4%;
     margin-right: 8%;
     padding-bottom: 500px; /* temp */
+    padding-right: 7%;
     float: right;
     width: 65%;
 }
@@ -186,4 +186,8 @@ footer {
     padding-bottom: 100px;
 }
 
+#results{
+    padding-bottom:25%;
+    
+}
 
