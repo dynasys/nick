@@ -44,8 +44,9 @@
     
     <nav>
         <ul>
-            <li><a href="" title="Home" class="main">Home</a></li>
-            <li><a href="comp_passwordchange.php" title="Settings" class="main">Settings</a></li>
+            <li><a href="admin_home.php" title="Home" class="main">Home</a></li>
+            <li><a href="admin_job_delete.php" title="Delete Job" class="main">Delete Jobs</a></li>
+            <li><a href="passwordChange.php" title="Settings" class="main">Settings</a></li>
         </ul>
     </nav>
 
@@ -61,6 +62,8 @@
         <table id="t01">
             <caption><h2>Job Postings</h2></caption>
             <tr>
+                <th>Company ID</th>
+                <th>Company Name</th>
                 <th>Job ID</th>
                 <th>Title</th>
                 <th>Position</th>		
@@ -70,14 +73,10 @@
                 <th>Option</th> 
             </tr>
             
-            <?php include "comp_home_scr.php" ?>
+            <?php include "admin_job_delete_scr.php" ?>
             
         </table>
         <br>
-        <form method="Link" action="create_job.php" class="cjobut">
-            <input type="submit" value="Create new job">
-        </form>
-          
     </div>
     
     <div id="profileInfo">

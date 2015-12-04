@@ -24,7 +24,7 @@ if(isset($_POST['login'])){
                  AND username='$username'", $connection);
     $role_row = mysql_fetch_row($role_quer);
     $role = $role_row[0];
-    
+    echo $role;
     //get first name for session
    
     
@@ -54,13 +54,17 @@ if(isset($_POST['login'])){
             
             header("location: stu_home.php");
         }
-        if($role == 'c'){
+        else if($role == 'c'){
             $cid_quer = mysql_query("SELECT Company_ID FROM company WHERE username='$username'");
             $cid_row = mysql_fetch_row($cid_quer);
             $companyID = $cid_row[0];
             $_SESSION['companyID'] = $companyID;
             
             header("location: comp_home.php");
+        }
+        else if($role == 'a'){
+            echo "admin";
+            header("location: admin_home.php");
         }
     }
     else {

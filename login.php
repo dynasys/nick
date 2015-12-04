@@ -14,7 +14,7 @@
             <input type="password" id="password" name="password" placeholder="password">
             <input type="submit" value="login" name="login"><br>
             <?php
-            include 'log.php';
+            include 'login_scr.php';
             ?>
         </form>
     </div>
@@ -26,10 +26,15 @@
         <h4>Students:</h4>
         <ul>
             <li>Create a profile using your CS account</li>
+            <li>Sign in</li>
+            <li>Search for a job that fits your needs!</li>
         </ul>
         <h4>Employers:</h4>
         <ul>
             <li>Register your company by providing email of representative and open positions</li>
+            <li>Wait for the administrator to give you login information</li>
+            <li>Post job information</li>
+            <li>Edit/delete jobs once you've posted them    </li>
         </ul>        
     </div>
     <div id="Register">

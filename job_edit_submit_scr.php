@@ -44,7 +44,6 @@ if(isset($_POST['submit'])){
 }
 
 if(isset($_POST['cancel'])){
-    echo"hello world";
     header("location:comp_home.php");
 }
 ?>

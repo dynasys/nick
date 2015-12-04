@@ -1,9 +1,9 @@
-<?php
+<!--<?php
  session_start();
     if(!isset($_SESSION['username'])){
     header("Location:Login.php");
     }
-?>
+?>-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -32,9 +32,6 @@
             background-color: #782f40;
             color: white;
         }
-        .cjobut{
-            text-align: right;
-        }
     </style>    
 </head>
 <body>
@@ -44,45 +41,57 @@
     
     <nav>
         <ul>
-            <li><a href="" title="Home" class="main">Home</a></li>
-            <li><a href="comp_passwordchange.php" title="Settings" class="main">Settings</a></li>
+            <li><a href="admin_home.php" title="Home" class="main">Home</a></li>
+            <li><a href="" title="Settings" class="main">Settings</a></li>
         </ul>
     </nav>
 
     <div id="cover">
+	
+	
     
     <div id="infobar">
-        Welcome
+        Welcome, Administrator
         <a href="logout.php" title="Logout" class="logout">Logout</a>
     </div>
         
     <div id="feed">
           
+		<h2>Create New Company User</h2>
+		<h5>Enter the company's new username and password</h5>
         <table id="t01">
-            <caption><h2>Job Postings</h2></caption>
-            <tr>
-                <th>Job ID</th>
-                <th>Title</th>
-                <th>Position</th>		
-                <th>Type</th>
-                <th>City</th>
-                <th>Posted</th>
-                <th>Option</th> 
-            </tr>
+			<form method="post">
+				<span>Username:</span><br>
+				<input type="text" name="username" id="username">
+				<br><span>Password:</span><br>
+				<input type="password" name="password" id="password">
+				<br><span>Re-enter Password:</span><br>
+				<input type="password" name="repassword" id="repassword">
+				<br>
+				<input type="Submit" value="Submit" name="submit">
+				<input type="Submit" value="Cancel" name="cancel">
             
-            <?php include "comp_home_scr.php" ?>
+            <?php include "adminApproveNewScript.php" ?>
+			</form>
             
         </table>
-        <br>
-        <form method="Link" action="create_job.php" class="cjobut">
-            <input type="submit" value="Create new job">
-        </form>
           
     </div>
     
-    <div id="profileInfo">
-
-    </div>
+    <!--<div id="profileInfo">
+		?php include "compInfoScript.php" ?>
+		
+        Paul - Nieto
+        <br>
+        Junior, Graduating Apr 2017 <br>
+        Computer Science
+        <br>
+        pn13b@my.fsu.edu <br>
+        resume last updated: tuba <br>
+        <br>
+        profile completion <br>
+        enter bar here
+    </div>-->
         
 
     

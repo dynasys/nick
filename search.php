@@ -51,7 +51,7 @@
         <ul>
             <li><a href="stu_home.php" title="Home" class="main">Home</a></li>
             <li><a href="search.php" title="Search" class="main">Search</a></li>
-            <li><a href="" title="Settings" class="main">Settings</a></li>
+            <li><a href="student_passwordchange.php" title="Settings" class="main">Settings</a></li>
         </ul>
     </nav>
 

@@ -1,9 +1,10 @@
 <?php
- session_start();
+    session_start();
     if(!isset($_SESSION['username'])){
     header("Location:Login.php");
     }
 ?>
+<!--?php include "logout.php" ?>-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -32,9 +33,6 @@
             background-color: #782f40;
             color: white;
         }
-        .cjobut{
-            text-align: right;
-        }
     </style>    
 </head>
 <body>
@@ -45,44 +43,51 @@
     <nav>
         <ul>
             <li><a href="" title="Home" class="main">Home</a></li>
-            <li><a href="comp_passwordchange.php" title="Settings" class="main">Settings</a></li>
+            <li><a href="admin_job_delete.php" title="Delete" class="main">Delete Jobs</a></li>
+            <li><a href="passwordChange.php" title="Settings" class="main">Settings</a></li>
         </ul>
     </nav>
 
     <div id="cover">
     
     <div id="infobar">
-        Welcome
+        Welcome, Administrator
         <a href="logout.php" title="Logout" class="logout">Logout</a>
     </div>
         
     <div id="feed">
           
         <table id="t01">
-            <caption><h2>Job Postings</h2></caption>
+            <caption><h2>Companies Needing Approval</h2></caption>
             <tr>
-                <th>Job ID</th>
-                <th>Title</th>
-                <th>Position</th>		
-                <th>Type</th>
-                <th>City</th>
-                <th>Posted</th>
+                <th>Company</th>
+                <th>Contact</th>		
+                <th>Phone</th>
+                <th>Email</th>
+				<th>Company Info</th>
                 <th>Option</th> 
             </tr>
             
-            <?php include "comp_home_scr.php" ?>
+            <?php include "adminApprovalListScript.php" ?>
             
         </table>
-        <br>
-        <form method="Link" action="create_job.php" class="cjobut">
-            <input type="submit" value="Create new job">
-        </form>
           
     </div>
     
-    <div id="profileInfo">
-
-    </div>
+    <!--<div id="profileInfo">
+		?php include "compInfoScript.php" ?>
+		
+        Paul - Nieto
+        <br>
+        Junior, Graduating Apr 2017 <br>
+        Computer Science
+        <br>
+        pn13b@my.fsu.edu <br>
+        resume last updated: tuba <br>
+        <br>
+        profile completion <br>
+        enter bar here
+    </div>-->
         
 
     
